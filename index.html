@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home | Haroon & Brothers</title>
+
+  <!-- FAVICON Img -->
+
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="mask-icon" href="assets/images/favicon.png" color="#5bbad5" />
+
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!--Bootstrap-->
+
+  <!-- CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <!-- Local -->
+  <!-- <link rel="stylesheet" href="/assets/bootstrap-5.0.2/css/bootstrap.css">
+  <link rel="stylesheet" href="/assets/bootstrap-5.0.2/css/bootstrap.min.css"> -->
+
+
+  <!--icon-fontawesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!--CSS-->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<style>
+  body {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8)),
+      url("assets/images/hero-bg.jpg");
+    background-position: 100% 5%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  /* .experience .img-sec {
+      background: url("assets/images/transformation.png");
+      background-size: cover;
+      background-position: center;
+    } */
+
+  .logo-sec {
+    background-image: url("assets/images/logo-grp.png");
+    background-size: cover;
+    position: absolute;
+    height: 5em;
+    width: 24em;
+    bottom: 9px;
+    left: 20vw;
+  }
+
+
+  @media (max-width: 480px) {
+    .logo-sec {
+      position: static;
+      height: 4rem;
+      margin-top: 2rem;
+    }
+  }
+
+
+  .services-container .services-box1 {
+    margin-bottom: 2rem;
+    position: relative;
+    height: 15rem;
+    width: 23rem;
+    background: url("assets/images/services-img-1.jpg");
+    background-size: cover;
+  }
+
+  .services-container .services-box1:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+
+  .services-container .services-box2 {
+    margin-bottom: 2rem;
+    position: relative;
+    height: 15rem;
+    width: 23rem;
+    background: url("assets/images/services-img-2.jpg");
+    background-size: cover;
+  }
+
+  .services-container .services-box2:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+
+  .services-container .services-box3 {
+    margin-bottom: 2rem;
+    position: relative;
+    height: 15rem;
+    width: 23rem;
+    background: url("assets/images/services-img-3.jpg");
+    background-size: cover;
+  }
+
+  .services-container .services-box3:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+
+  .services-container .services-box4 {
+    margin-bottom: 2rem;
+    position: relative;
+    height: 15rem;
+    width: 23rem;
+    background: url("assets/images/services-img-4.jpg");
+    background-size: cover;
+  }
+
+  .services-container .services-box4:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+
+  .services-container .services-box5 {
+    margin-bottom: 2rem;
+    position: relative;
+    height: 15rem;
+    width: 23rem;
+    background: url("assets/images/services-img-5.jpg");
+    background-size: cover;
+  }
+
+  .services-container .services-box5:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+
+  .services-container .services-box6 {
+    position: relative;
+    height: 15rem;
+    width: 23rem;
+    background: url("assets/images/services-img-6.jpg");
+    background-size: cover;
+  }
+
+  .services-container .services-box6:hover {
+    transform: scale(1.03);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+    border-bottom-right-radius: 5%;
+  }
+</style>
+
+<body>
+  <header>
+    <!--NAVBAR-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="
+          background-color: #262626f1 !important;
+          border-right: 2px solid rgb(255, 0, 0);
+        ">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="img-fluid" src="assets/images/icon-simple-png.png"
+            alt="H&B_Text_Logo" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="menu-ul navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="r-projects.html">Running Projects</a>
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li><a class="dropdown-item" href="all-projects.html">All Projects</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="clients.html">Clients</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact_us.html">Contact Us</a>
+            </li>
+          </ul>
+          <a href="https://api.whatsapp.com/send?phone=8801768534770" target="_blank"><i
+              class="fa-brands fa-square-whatsapp nav-i"></i></a>
+          <a href="https://www.facebook.com/profile.php?id=100064046225117" target="_blank"><i
+              class="fa-brands fa-square-facebook nav-i"></i></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="hero-container">
+      <div id="hero-txt">
+        <h1>Haroon & Brothers</h1>
+        <h4 id="hero-bio">
+          1st Category Contracting Company Of Petro Bangla
+        </h4>
+        <h6>
+          There are no projects relate high or low pressure <br />
+          gasline, water line & oil pipeline construction <br />
+          we can't handle!
+        </h6>
+      </div>
+
+      <!-- Animation -->
+
+      <section class="animation">
+        <div class="first a-parent">
+          <div>Industrial Gasline Construction</div>
+        </div>
+        <div class="second a-parent">
+          <div>Water Line Construction</div>
+        </div>
+        <div class="third a-parent">
+          <div>Oil Pipeline Construction</div>
+        </div>
+      </section>
+    </div>
+
+    <section class="experience-sec">
+      <div class="experience">
+        <div class="img-sec">
+          <img src="./assets/images/transformation.png" alt="1987-2023.jpg" />
+        </div>
+        <div class="text-part">
+          <h5 style="color: black">About Work Experience</h5>
+          <h2 class="text-dark">
+            <span style="color: rgba(0, 0, 255, 0.765)">36+ Years</span> of
+            industrial Experience
+          </h2>
+          <p class="text-dark">
+            <!-- There Are No Projects Relate High Or Low Pressure
+            Gasline, Water Line & Oil Pipeline Construction
+            We Can't Handle!
+            We are always ready to provide one-stop service for projects. We
+            provide excellent service through a team of experts including design
+            consultants, experienced engineers, technicians and
+            installation/repair teams. -->
+            we pride ourselves on our commitment to excellence. We understand
+            that constructing <br />
+            and maintaining pipelines is a complex and critical task that
+            requires precision and a <br />
+            keen eye for detail. Whether it's a high-pressure gasline for a
+            rapidly growing city, a <br />
+            low-pressure gasline for a residential area, a waterline for a
+            community, or an oil pipeline for industrial purposes, we have the
+            expertise and resources to ensure the job is done right.
+          </p>
+        </div>
+        <div class="logo-sec"></div>
+      </div>
+    </section>
+    <hr />
+
+    <section class="what-we-do">
+      <h1>WHAT WE DO</h1>
+      <div class="u_div"><span class="u_line"></span></div>
+
+      <div class="services-container">
+        <div class="services-box services-box1">
+          <div class="box-heading box-heading-1">
+            Industrial gas line Connection & Extention work
+          </div>
+        </div>
+        <div class="services-box services-box2">
+          <div class="box-heading box-heading-2">
+            pipeline repairing, maintanance & construction
+          </div>
+        </div>
+        <div class="services-box services-box3">
+          <div class="box-heading box-heading-3" id="box-heading-3">
+            Reduction of fuel cost
+          </div>
+        </div>
+        <div class="services-box services-box4">
+          <div class="box-heading box-heading-4">
+            Existing gas appliance rearrange
+          </div>
+        </div>
+        <div class="services-box services-box5">
+          <div class="box-heading" id="box-heading-5">
+            energy audit advice
+          </div>
+        </div>
+        <div class="services-box services-box6">
+          <div class="box-heading" id="box-heading-6">
+            pipeline network installation
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <strong>M/S Haroon & Brothers © All rights reserved. </strong> |
+    <strong>
+      Website Developed and Maintain by
+      <a target="_blank" href="https://www.facebook.com/hasnatur.rahim.5">
+        HASNAT</a></strong>
+  </footer>
+
+
+  <!-- BOOOOOOOTSTRAP JS -->
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
